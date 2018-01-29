@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Room</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let player of players">
+      <div>
+        {{player.username}}
+      </div>
+      <div [style.color]="player.isReady ? 'green' : 'red'">
+        {{player.isReady ? "ready" : "not ready"}}
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer color="black">
+  <ion-toolbar>
+    <ion-title justify-content-center>
+      <button ion-button block outline (click)="readyButton()" class="ready-button" [style.background-color]="isReady ? 'red' : 'green'">
+        {{isReady ? "not-ready" : "ready"}}
+      </button>
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>

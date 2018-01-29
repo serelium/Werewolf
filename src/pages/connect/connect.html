@@ -1,11 +1,20 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Connect
-    </ion-title>
+    <ion-title>Connect</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-
+<ion-content padding no-bounce>
+  <div class="connect-box">
+    <ion-list>
+      <ion-item>
+        <ion-label stacked>Username</ion-label>
+        <ion-input type="text" [(ngModel)]="username"></ion-input>
+      </ion-item>
+    </ion-list>
+    <div class="img-box">
+      <img src="assets/imgs/werewolf.png" alt="avatar">
+    </div>
+    <button (click)="connectToRoom()" class="connect-button">Connect</button>
+  </div>
 </ion-content>

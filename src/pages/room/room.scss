@@ -1,4 +1,4 @@
-page-connect {
+page-room {
 
   .connect-box{
     background: #222222;
@@ -12,6 +12,7 @@ page-connect {
 
   .item{
     background-color: #222222;
+    color: white;
   }
 
   .text-input{
@@ -42,5 +43,14 @@ page-connect {
     height: 150px;
     width: 150px;
     border-radius: 50%;
+  }
+
+  .button-outline{
+    border-color: white;
+    color: white;
+  }
+
+  .toolbar-ios ion-title{
+    padding: 0px 0px 0px;
   }
 }
