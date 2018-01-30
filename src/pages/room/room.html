@@ -10,7 +10,7 @@
       <div>
         {{player.username}}
       </div>
-      <div [style.color]="player.isReady ? 'green' : 'red'">
+      <div [style.color]="player.isReady ? '#69f577' : '#f56356'">
         {{player.isReady ? "ready" : "not ready"}}
       </div>
     </ion-item>
@@ -20,8 +20,8 @@
 <ion-footer color="black">
   <ion-toolbar>
     <ion-title justify-content-center>
-      <button ion-button block outline (click)="readyButton()" class="ready-button" [style.background-color]="isReady ? 'red' : 'green'">
-        {{isReady ? "not-ready" : "ready"}}
+      <button ion-button block outline (click)="readyButton()" class="ready-button" [style.background-color]="player.isReady ? '#f56356' : '#69f577'">
+        {{player.isReady ? "not-ready" : "ready"}}
       </button>
     </ion-title>
   </ion-toolbar>
